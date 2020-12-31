@@ -1,10 +1,9 @@
 package org.abubaker.diceroller
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         // Select the Button from the activity_main.xml
         val rollButton: Button = findViewById(R.id.roll_button)
 
-        rollButton.setOnClickListener{
+        rollButton.setOnClickListener {
             // Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT).show()
             rollDice()
         }
