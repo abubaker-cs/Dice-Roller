@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 30 // Actual API version, your app is complied against
     buildToolsVersion "30.0.1"
 
     defaultConfig {
         applicationId "org.abubaker.diceroller"
-        minSdkVersion 27
-        targetSdkVersion 30
+        minSdkVersion 27 // Minimum supported version
+        targetSdkVersion 30 // Should be identical to compileSdkVersion
         versionCode 1
         versionName "1.0"
 
