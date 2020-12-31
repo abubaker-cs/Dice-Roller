@@ -8,6 +8,8 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var diceImage: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         // onCreate - LifeTime
@@ -23,13 +25,16 @@ class MainActivity : AppCompatActivity() {
             // Toast.makeText(this, "Button Clicked", Toast.LENGTH_SHORT).show()
             rollDice()
         }
+
+        // Declare Resources
+        diceImage = findViewById(R.id.dice_image)
+
     }
 
     private fun rollDice() {
         val randInt = Random().nextInt(6) + 1
         // val resultText: TextView = findViewById(R.id.result_text)
         // resultText.text = randInt.toString()
-        val diceImage: ImageView = findViewById(R.id.dice_image)
 
         // When = Switch Case
         val drawableResource = when (randInt) {
