@@ -14,15 +14,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/empty_dice"
-        tools:src="@drawable/dice_1"/>
+        tools:srcCompat="@drawable/dice_1"/>
 
     <!--
-        android:src="@drawable/empty_dice"
-
-        TODO: Bug (Placeholder is not compilable with app:srcCompat
-        Using both app:srcCompat and tools:src is causing the placeholder to
-        disappear from the preview screen
-
+        Solution: https://stackoverflow.com/questions/57237876/toolssrc-is-not-working-with-support-library
     -->
 
     <Button
